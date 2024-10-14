@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiSchoolApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiSchoolApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiSchoolApp">
+
+    <TabBar>
+        <ShellContent
+            Title="Teachers"
+            ContentTemplate="{DataTemplate local:Teachers}"
+            Icon="{OnPlatform 'icon.png', iOS='icon.png', MacCatalyst='icon.png'}" />
+
+        <ShellContent
+            Title="Maintanance"
+            ContentTemplate="{DataTemplate local:Maintanance}"
+            Icon="{OnPlatform 'icon.png', iOS='icon.png', MacCatalyst='icon.png'}" />
+        <ShellContent
+            Title="Support"
+            ContentTemplate="{DataTemplate local:Support}"
+            Icon="{OnPlatform 'icon.png', iOS='icon.png', MacCatalyst='icon.png'}" />
+
+        <ShellContent
+            Title="Students"
+            ContentTemplate="{DataTemplate local:Students}"
+            Icon="{OnPlatform 'icon.png', iOS='icon.png', MacCatalyst='icon.png'}" />
+
+    </TabBar>
+
+</Shell>
